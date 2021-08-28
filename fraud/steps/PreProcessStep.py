@@ -68,7 +68,7 @@ class PreProcessStep():
         
         self._pipeline = pipeline
         
-    def fit_and_transform(self, df, allow_refit=False):
+    def fit_transform(self, df, allow_refit=False):
         if self._pipeline is not None and not allow_refit:
             raise Exception("Refitting is not allowed by default")
             
